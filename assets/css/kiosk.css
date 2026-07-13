@@ -1,0 +1,206 @@
+.fsnw-signature-kiosk {
+	position: fixed;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: var( --fsnw-bg-url, var( --fsnw-gradient-hero ) ) center / cover no-repeat;
+	color: #fff;
+	text-align: center;
+	padding: var( --fsnw-space-6 );
+	box-sizing: border-box;
+	font-family: var( --fsnw-font );
+}
+
+.fsnw-signature-kiosk .fsnw-hidden {
+	display: none !important;
+}
+
+.fsnw-signature-kiosk .fsnw-signature-connection {
+	position: fixed;
+	top: var( --fsnw-space-3 );
+	left: 50%;
+	transform: translateX( -50% );
+	background: var( --fsnw-status-overdue );
+	color: #fff;
+	padding: var( --fsnw-space-2 ) var( --fsnw-space-4 );
+	border-radius: var( --fsnw-radius-sm );
+	font-size: var( --fsnw-font-size-small );
+	font-weight: 600;
+	box-shadow: var( --fsnw-shadow-md );
+	z-index: 20;
+}
+
+.fsnw-signature-livestatus {
+	position: fixed;
+	bottom: var( --fsnw-space-2 );
+	right: var( --fsnw-space-3 );
+	font-size: 11px;
+	color: rgba( 255, 255, 255, 0.6 );
+	font-family: monospace;
+	z-index: 10;
+}
+
+.fsnw-signature-state {
+	width: 100%;
+	max-width: 900px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fsnw-signature-waiting {
+	flex-direction: column;
+	text-align: center;
+	animation: fsnw-signature-breathe 4s ease-in-out infinite;
+}
+
+/* Ruhebildschirm: Logo dominiert (~80 % des Bildschirms), darunter nur die Uhr. */
+
+.fsnw-signature-waiting-logo-image {
+	max-width: 80vw;
+	max-height: 65vh;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+.fsnw-signature-waiting-logo {
+	font-size: 14vw;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	margin: 0;
+}
+
+.fsnw-signature-waiting-clock {
+	font-size: 44px;
+	font-weight: 300;
+	letter-spacing: 0.06em;
+	color: rgba( 255, 255, 255, 0.85 );
+	margin: var( --fsnw-space-5 ) 0 0;
+}
+
+@keyframes fsnw-signature-breathe {
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.85;
+	}
+}
+
+.fsnw-signature-card {
+	width: 100%;
+	background: var( --fsnw-surface );
+	color: var( --fsnw-text );
+	border-radius: var( --fsnw-radius-lg );
+	box-shadow: var( --fsnw-shadow-lg );
+	padding: var( --fsnw-space-6 );
+	box-sizing: border-box;
+}
+
+.fsnw-signature-details {
+	margin-bottom: var( --fsnw-space-5 );
+}
+
+.fsnw-signature-details h1 {
+	font-size: 28px;
+	margin: 0 0 var( --fsnw-space-2 );
+}
+
+/* Kontextzeile über dem Empfängernamen, z. B. "Fahrzeugübergabe" */
+
+.fsnw-signature-context {
+	font-size: var( --fsnw-font-size-small );
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var( --fsnw-text-muted );
+	margin: 0 0 var( --fsnw-space-1 );
+}
+
+/* Liste der ausgegebenen Positionen */
+
+.fsnw-signature-items {
+	list-style: none;
+	margin: 0 0 var( --fsnw-space-2 );
+	padding: 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.fsnw-signature-items li {
+	margin: 0 0 var( --fsnw-space-1 );
+}
+
+.fsnw-signature-meta {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: var( --fsnw-space-2 );
+	font-size: var( --fsnw-font-size-body );
+	color: var( --fsnw-text-muted );
+	margin: 0 0 var( --fsnw-space-1 );
+}
+
+.fsnw-signature-canvas {
+	width: 100%;
+	height: 320px;
+	background: var( --fsnw-bg );
+	border: 1px solid var( --fsnw-border );
+	border-radius: var( --fsnw-radius-md );
+	touch-action: none;
+}
+
+.fsnw-signature-error {
+	min-height: 24px;
+	color: var( --fsnw-status-overdue );
+	font-weight: 600;
+	margin: var( --fsnw-space-2 ) 0 0;
+}
+
+.fsnw-signature-actions {
+	display: flex;
+	justify-content: center;
+	gap: var( --fsnw-space-4 );
+	margin-top: var( --fsnw-space-3 );
+}
+
+.fsnw-signature-success-icon {
+	width: 120px;
+	height: 120px;
+	color: var( --fsnw-status-available );
+}
+
+.fsnw-signature-success-text {
+	font-size: 32px;
+	font-weight: 600;
+	margin: var( --fsnw-space-4 ) 0 0;
+}
+
+@media ( max-width: 700px ) {
+	.fsnw-signature-waiting-clock {
+		font-size: 28px;
+	}
+
+	.fsnw-signature-details h1 {
+		font-size: 22px;
+	}
+
+	.fsnw-signature-actions {
+		flex-direction: column;
+	}
+
+	.fsnw-signature-success-icon {
+		width: 80px;
+		height: 80px;
+	}
+
+	.fsnw-signature-success-text {
+		font-size: 24px;
+	}
+}

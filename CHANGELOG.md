@@ -6,6 +6,24 @@ Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-13
+
+Added
+
+- Kiosk-Frontend: Shortcode `[wp_fsnw_signature_kiosk]` mit Vollbild-Template
+  (Ruhebildschirm mit großem Logo + Uhr, generische Anforderungs-Karte mit Titel,
+  Empfänger, Positionsliste, optionalem Zeitraum und Zusatzzeilen, Erfolgsbildschirm),
+  portiert aus wp-fsnw-car-rent inkl. aller Robustheits-Mechanismen (2s-Polling,
+  8s-Timeout, Offline-Diagnose per Connectivity-Check, 30-min-Idle-Reload,
+  Verbindungs-Debug unten rechts).
+- Einstellungsseite unter Einstellungen → Signatur-Kiosk: Firmenlogo und
+  Hintergrundbild per Media-Uploader (eigene Options, unabhängig von Car-Rent).
+- Design-Basis (`tokens.css`/`base.css` Corporate-Design) und signature_pad 4.1.7
+  übernommen; `kiosk.css` als generalisierte Fassung von frontend-signature.css.
+- Übergangsweise lädt der Enqueue-Check auch Seiten mit dem Legacy-Shortcode
+  `wp_fsnw_car_signature`, damit die bestehende Tablet-Seite nach der Umstellung
+  von wp-fsnw-car-rent ohne Seitenbearbeitung weiterläuft.
+
 ## [0.2.0] - 2026-07-13
 
 Added

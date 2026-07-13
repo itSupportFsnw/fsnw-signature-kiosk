@@ -45,6 +45,9 @@ class Plugin {
 
 		add_action( 'init', array( $this, 'load_textdomain' ) );
 		add_action( 'rest_api_init', array( $this, 'register_rest_routes' ) );
+
+		( new \FsnwSignatureKiosk\Admin\AdminController() )->init();
+		( new \FsnwSignatureKiosk\Frontend\FrontendController() )->init();
 	}
 
 	/**
