@@ -34,5 +34,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/fsnw-signature-kiosk/
-          server-dir: /hilfe.fsnw.de/wp-content/plugins/fsnw-signature-kiosk/
+          # Der FTP-Benutzer dieses Repos ist direkt auf das Plugin-Verzeichnis
+          # (wp-content/plugins/fsnw-signature-kiosk) gejailt - Upload daher in den Root.
+          server-dir: ./
           protocol: ftp
