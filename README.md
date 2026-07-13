@@ -1,5 +1,8 @@
 # FSNW Signature Kiosk
 
+> **Für Plugin-Entwickler:** Schritt-für-Schritt-Anleitung zur Integration in
+> eigene Plugins siehe [docs/integration.md](docs/integration.md).
+
 Generischer Tablet-Signatur-Kiosk für WordPress. Andere Plugins senden Signatur-Anforderungen
 (Ausgabe von Fahrzeugen, Geräten, Schlüsseln, …), Empfänger bestätigen per Unterschrift auf
 einem dauerhaft laufenden Tablet.
