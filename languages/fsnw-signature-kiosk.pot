@@ -1,0 +1,210 @@
+# Copyright (C) 2026 freestyle Jugendhilfe gGmbh
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: FSNW Signature Kiosk 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/workspace\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-13T07:33:10+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: fsnw-signature-kiosk\n"
+
+#. Plugin Name of the plugin
+#: fsnw-signature-kiosk.php
+msgid "FSNW Signature Kiosk"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: fsnw-signature-kiosk.php
+msgid "https://github.com/itSupportFsnw/fsnw-signature-kiosk"
+msgstr ""
+
+#. Description of the plugin
+#: fsnw-signature-kiosk.php
+msgid "Generischer Tablet-Signatur-Kiosk – andere Plugins senden Signatur-Anforderungen (Ausgabe von Fahrzeugen, Geräten usw.), Empfänger bestätigen per Unterschrift auf dem Tablet."
+msgstr ""
+
+#. Author of the plugin
+#: fsnw-signature-kiosk.php
+msgid "freestyle Jugendhilfe gGmbh"
+msgstr ""
+
+#. Author URI of the plugin
+#: fsnw-signature-kiosk.php
+msgid "https://www.freestyle-jugendhilfe.de"
+msgstr ""
+
+#: admin/class-admin-controller.php:38
+#: admin/class-admin-controller.php:39
+#: templates/admin/settings.php:16
+msgid "Signatur-Kiosk"
+msgstr ""
+
+#: admin/class-admin-controller.php:68
+msgid "Bild auswählen"
+msgstr ""
+
+#: admin/class-admin-controller.php:69
+msgid "Bild verwenden"
+msgstr ""
+
+#: admin/class-admin-controller.php:91
+msgid "Keine Berechtigung."
+msgstr ""
+
+#: frontend/class-frontend-controller.php:92
+msgid "Warten auf Anforderung."
+msgstr ""
+
+#: frontend/class-frontend-controller.php:93
+msgid "Bitte unterschreibe im markierten Feld."
+msgstr ""
+
+#: frontend/class-frontend-controller.php:94
+#: templates/kiosk/kiosk-page.php:57
+msgid "Bestätigen"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:95
+#: templates/kiosk/kiosk-page.php:53
+msgid "Löschen"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:96
+msgid "Wird gespeichert …"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:97
+#: templates/kiosk/kiosk-page.php:65
+msgid "Danke!"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:98
+msgid "Fehler beim Speichern der Unterschrift. Bitte erneut versuchen."
+msgstr ""
+
+#: frontend/class-frontend-controller.php:99
+msgid "Verbindung unterbrochen – erneuter Versuch …"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:100
+msgid "Server nicht erreichbar (Internet vorhanden) – erneuter Versuch …"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:101
+msgid "Kein Internet – bitte WLAN-Verbindung des Tablets prüfen"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:102
+msgid "Live"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:103
+msgid "Tick"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:104
+msgid "Fehler:"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:105
+msgid "ausstehend"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:106
+msgid "belegt"
+msgstr ""
+
+#: frontend/class-frontend-controller.php:107
+msgid "Erneut senden"
+msgstr ""
+
+#: fsnw-signature-kiosk.php:35
+msgid "FSNW Signature Kiosk: Composer-Abhängigkeiten fehlen. Bitte \"composer install\" im Plugin-Verzeichnis ausführen."
+msgstr ""
+
+#: includes/Rest/class-rest-controller.php:102
+msgid "Zu viele Anfragen. Bitte kurz warten und erneut versuchen."
+msgstr ""
+
+#: includes/Rest/class-signatures-controller.php:96
+msgid "Unterschrift nicht gefunden."
+msgstr ""
+
+#: includes/Services/class-request-service.php:70
+msgid "Signatur-Anforderung unvollständig: source, reference, title, recipient_name und mindestens eine Position sind Pflicht."
+msgstr ""
+
+#: includes/Services/class-request-service.php:170
+msgid "Diese Anforderung ist nicht (mehr) offen."
+msgstr ""
+
+#: includes/Services/class-signature-service.php:54
+msgid "Ungültiges Signaturformat."
+msgstr ""
+
+#: includes/Services/class-signature-service.php:60
+msgid "Die Unterschrift ist leer oder beschädigt."
+msgstr ""
+
+#: includes/Services/class-signature-service.php:64
+msgid "Die Unterschrift ist zu groß."
+msgstr ""
+
+#: includes/Services/class-signature-service.php:72
+msgid "Die Unterschrift konnte nicht gespeichert werden."
+msgstr ""
+
+#: templates/admin/settings.php:19
+msgid "Einstellungen gespeichert."
+msgstr ""
+
+#: templates/admin/settings.php:22
+msgid "Shortcode"
+msgstr ""
+
+#: templates/admin/settings.php:25
+msgid "Vollbild-Kiosk-Modus für digitale Unterschriften auf einem dauerhaft laufenden Tablet, keine Anmeldung erforderlich. Andere Plugins senden ihre Signatur-Anforderungen über die PHP-API an diese Seite."
+msgstr ""
+
+#: templates/admin/settings.php:28
+msgid "Corporate Design"
+msgstr ""
+
+#: templates/admin/settings.php:29
+msgid "Firmenlogo und Hintergrundbild für den Kiosk-Wartebildschirm. Ohne Upload wird eine Ersatz-Wortmarke mit Verlaufshintergrund angezeigt."
+msgstr ""
+
+#: templates/admin/settings.php:37
+msgid "Firmenlogo"
+msgstr ""
+
+#: templates/admin/settings.php:45
+msgid "Logo auswählen"
+msgstr ""
+
+#: templates/admin/settings.php:46
+#: templates/admin/settings.php:59
+msgid "Entfernen"
+msgstr ""
+
+#: templates/admin/settings.php:50
+msgid "Hintergrundbild"
+msgstr ""
+
+#: templates/admin/settings.php:58
+msgid "Hintergrund auswählen"
+msgstr ""
+
+#: templates/admin/settings.php:64
+msgid "Speichern"
+msgstr ""
+
+#: templates/kiosk/kiosk-page.php:28
+msgid "FSNW"
+msgstr ""
