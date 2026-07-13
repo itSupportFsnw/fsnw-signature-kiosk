@@ -3,7 +3,7 @@
  * Plugin Name:       FSNW Signature Kiosk
  * Plugin URI:        https://github.com/itSupportFsnw/fsnw-signature-kiosk
  * Description:       Generischer Tablet-Signatur-Kiosk – andere Plugins senden Signatur-Anforderungen (Ausgabe von Fahrzeugen, Geräten usw.), Empfänger bestätigen per Unterschrift auf dem Tablet.
- * Version:           0.3.0
+ * Version:           1.0.0
  * Requires at least: 6.4
  * Requires PHP:      8.0
  * Author:            freestyle Jugendhilfe gGmbh
@@ -18,7 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FSNW_SIGNATURE_KIOSK_VERSION', '0.3.0' );
+define( 'FSNW_SIGNATURE_KIOSK_VERSION', '1.0.0' );
 define( 'FSNW_SIGNATURE_KIOSK_DB_VERSION', '0.1.0' );
 define( 'FSNW_SIGNATURE_KIOSK_PLUGIN_FILE', __FILE__ );
 define( 'FSNW_SIGNATURE_KIOSK_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );

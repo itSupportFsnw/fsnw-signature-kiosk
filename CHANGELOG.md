@@ -6,6 +6,16 @@ Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-07-13
+
+Added
+
+- CI/CD: GitHub-Actions-Workflows für FTP-Deploy (SamKirkland/FTP-Deploy-Action nach
+  `/hilfe.fsnw.de/wp-content/plugins/fsnw-signature-kiosk/`), PHP-Lint (8.0–8.3),
+  Build-ZIP, Release bei Tags und automatische POT-Generierung
+  (`languages/fsnw-signature-kiosk.pot` [skip ci]).
+- README mit PHP-API-Dokumentation für Produzenten-Plugins.
+
 ## [0.3.0] - 2026-07-13
 
 Added
