@@ -44,6 +44,15 @@ class Plugin {
 		Activator::maybe_upgrade();
 
 		add_action( 'init', array( $this, 'load_textdomain' ) );
+		add_action( 'rest_api_init', array( $this, 'register_rest_routes' ) );
+	}
+
+	/**
+	 * Registriert alle REST-Controller im Namespace fsnw-signature-kiosk/v1.
+	 */
+	public function register_rest_routes(): void {
+		( new Rest\KioskController() )->register_routes();
+		( new Rest\SignaturesController() )->register_routes();
 	}
 
 	/**

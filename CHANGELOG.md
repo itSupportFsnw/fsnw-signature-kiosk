@@ -6,6 +6,20 @@ Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-07-13
+
+Added
+
+- REST-Endpunkte im Namespace `fsnw-signature-kiosk/v1`:
+  - `GET /kiosk/pending` (anonym, 120/min pro IP, no-cache): älteste offene Anforderung
+    als `{pending: null|{id, title, recipient_name, items[], period, meta_lines[]}}`.
+  - `POST /kiosk/signatures` (anonym, 20/min pro IP): `{request_id, signature}` schließt
+    eine offene Anforderung ab und feuert die Abschluss-Hooks.
+  - `GET /signatures/{id}/image` (Standard: `manage_options`; erweiterbar über den Filter
+    `fsnw_signature_kiosk_can_view_image`): streamt das Unterschrift-PNG.
+- `RateLimiter` (Fixed-Window per Transient, inkl. reset_at-Fix aus wp-fsnw-car-rent
+  v1.7.4) und abstrakter `RestController` portiert.
+
 ## [0.1.0] - 2026-07-13
 
 Added
