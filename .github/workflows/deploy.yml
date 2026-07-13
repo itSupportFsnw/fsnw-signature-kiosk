@@ -34,6 +34,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/fsnw-signature-kiosk/
-          # Gleicher FTP-Benutzer wie wp-fsnw-car-rent - daher derselbe absolute Pfad.
-          server-dir: /hilfe.fsnw.de/wp-content/plugins/fsnw-signature-kiosk/
+          # Der FTP-Benutzer ist auf /hilfe.fsnw.de/wp-content/plugins/ eingeschränkt -
+          # Upload daher relativ in den Plugin-Unterordner.
+          server-dir: ./fsnw-signature-kiosk/
           protocol: ftp
